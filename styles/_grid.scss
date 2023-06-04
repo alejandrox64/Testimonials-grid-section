@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+$ModerateViolet: hsl(263, 53%, 52%);
+$VioletFont: hsl(263, 55%, 82%);
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$graysFont: hsl(217, 19%, 70%);
+$VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+$fontBlue: hsl(219, 29%, 64%);
+$White: hsl(0, 0%, 100%);
+$LightGray: hsl(0, 0%, 81%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 15px;
+}
+
+.main-container {
+    width: 1112px;
+    height: 575px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    border-radius: 5px;
+    margin: 165px auto;
+    
+    .daniel, .jonathan, .kira, .janette, .patrick {
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    .daniel {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .jonathan {
+        
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .patrick {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .kira {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+    .jeanette {
+        
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+}

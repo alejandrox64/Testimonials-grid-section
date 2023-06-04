@@ -1,0 +1,12 @@
+
+.contenedor {
+    width: 70%;
+}
+
+.contenedor div {
+    padding: 20px;
+    color: #fff;
+    background-color: #2f89fc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+}

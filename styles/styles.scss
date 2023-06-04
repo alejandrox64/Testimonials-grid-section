@@ -1,0 +1,133 @@
+@use 'grid' as *;
+@mixin measures {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+body {
+    background-color: $LightGrayishBlue;
+    
+}
+
+.main-container {
+
+    .daniel {
+        color: $White;
+        background-color: $ModerateViolet;
+        background-image: url(/images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: right 18% top 0;
+        img {
+            background-color: $VioletFont;
+        }
+        .verified {
+            color: $VioletFont;
+        }
+        .comentary {
+            @include measures;
+        }
+        .testimony {
+            font-weight: 500;
+            color: $VioletFont;
+        }
+    }
+
+    .jonathan {
+        color: $White;
+        background-color: $VeryDarkGrayishBlue;
+        img {
+            background-color: $graysFont;
+        }
+        .verified {
+            color: $graysFont;
+        }
+        .comentary {
+            @include measures;
+        }
+        .testimony {
+            font-weight: 500;
+            color: $graysFont;
+        }
+    }
+
+    .kira {
+        color: $VeryDarkGrayishBlue;
+        background-color: $White;
+        img {
+            background-color: $graysFont;
+        }
+        .verified {
+            color: $graysFont;
+        }
+        .comentary {
+            @include measures;
+        }
+        .testimony {
+            color: $graysFont;
+        }
+    }
+
+    .jeanette {
+        @extend .kira
+    }
+
+    .patrick {
+        color: $White;
+        background-color: $VeryDarkBlackishBlue;
+    }
+    img {
+        background-color: $ModerateViolet;
+    }
+    .verified {
+        color: $fontBlue;
+    }
+    .comentary {
+        @include measures;
+    }
+    .testimony {
+        color: $fontBlue;
+    }
+
+
+    div {
+        
+        div {
+            margin-bottom: 1.3rem;
+            display: flex;
+            align-items: center;
+            .name {
+                margin-left: 1rem;
+                
+            }
+        }
+    }
+
+    img {
+        width: 40px;
+        border-radius: 50%;
+        padding: 2.5px;
+    }
+}
+
+@media (max-width: 1145px ) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 325px;
+    }
+    .attribution {
+        padding-top: 1300px;
+    }
+}
+
+
+
+.attribution { 
+    font-size: 18px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
